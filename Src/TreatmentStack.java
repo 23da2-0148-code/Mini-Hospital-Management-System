@@ -70,3 +70,11 @@ public class TreatmentStack {
         while (current != null) {
             System.out.println("- " + current.record);
             current = current.next;
+        }
+    }
+
+    // ---------- HELPER ----------
+    public boolean isEmpty() {
+        return top == null;
+    }
+}
