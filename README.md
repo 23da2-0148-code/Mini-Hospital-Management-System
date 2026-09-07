@@ -37,6 +37,6 @@ Running Main,java presents the following menu :
 
 ## Project details
 
-- CIT 300 (Mid Assignment)
+- CIT 300 - Data Structures and Algorithms  (Mid Assignment)
 - Student ID : 23DA2-0148
 - Student Name : J.P.A.J.Patabadige
