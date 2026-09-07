@@ -1,13 +1,13 @@
 package Src;
 
 public class VisitLinkedList {
-    Visit head; // first visit in the list
+    Visit head; 
 
     public VisitLinkedList() {
         this.head = null;
     }
 
-    // Add a new visit to the end of the list
+    
     public void addVisit(Visit newVisit) {
         if (head == null) {
             head = newVisit;
@@ -20,7 +20,7 @@ public class VisitLinkedList {
         current.next = newVisit;
     }
 
-    // Remove a visit by its visitId
+    
     public void removeVisit(int visitId) {
         if (head == null) {
             System.out.println("No visit history to remove from.");
@@ -46,7 +46,7 @@ public class VisitLinkedList {
         }
     }
 
-    // Search for a visit by its visitId
+    
     public Visit searchVisit(int visitId) {
         Visit current = head;
         while (current != null) {
@@ -58,7 +58,7 @@ public class VisitLinkedList {
         return null; // not found
     }
 
-    // Display all visits in this patient's history
+    
     public void displayVisits() {
         if (head == null) {
             System.out.println("No visit history available.");

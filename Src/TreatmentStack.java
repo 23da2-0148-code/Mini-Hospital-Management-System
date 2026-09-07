@@ -2,7 +2,7 @@ package Src;
 
 public class TreatmentStack {
 
-    // A simple record of one completed treatment
+    
     public class TreatmentRecord {
         int patientId;
         String patientName;
@@ -23,7 +23,7 @@ public class TreatmentStack {
         }
     }
 
-    // Internal stack node
+    
     private class StackNode {
         TreatmentRecord record;
         StackNode next;
@@ -40,7 +40,7 @@ public class TreatmentStack {
         this.top = null;
     }
 
-    // ---------- PUSH ----------
+    
     public void push(TreatmentRecord record) {
         StackNode newNode = new StackNode(record);
         newNode.next = top;
@@ -48,7 +48,7 @@ public class TreatmentStack {
         System.out.println("Treatment record added for Patient ID " + record.patientId + ".");
     }
 
-    // ---------- POP ----------
+    
     public TreatmentRecord pop() {
         if (top == null) {
             System.out.println("No treatment records available.");
@@ -59,7 +59,7 @@ public class TreatmentStack {
         return removed;
     }
 
-    // ---------- DISPLAY ----------
+    
     public void displayStack() {
         if (top == null) {
             System.out.println("No treatment records to display.");
@@ -73,7 +73,7 @@ public class TreatmentStack {
         }
     }
 
-    // ---------- HELPER ----------
+    
     public boolean isEmpty() {
         return top == null;
     }

@@ -2,7 +2,7 @@ package Src;
 
 public class EmergencyQueue {
 
-    // Internal node just for the queue (separate from BST's Patient links)
+    
     private class QueueNode {
         Patient patient;
         QueueNode next;
@@ -21,7 +21,7 @@ public class EmergencyQueue {
         this.rear = null;
     }
 
-    // ---------- ENQUEUE ----------
+    
     public void enqueue(Patient patient) {
         QueueNode newNode = new QueueNode(patient);
         if (rear == null) {
@@ -35,7 +35,7 @@ public class EmergencyQueue {
         System.out.println("Patient " + patient.name + " added to the waiting queue.");
     }
 
-    // ---------- DEQUEUE ----------
+    
     public Patient dequeue() {
         if (front == null) {
             System.out.println("No patients waiting in the queue.");
@@ -49,7 +49,7 @@ public class EmergencyQueue {
         return treatedPatient;
     }
 
-    // ---------- DISPLAY ----------
+    
     public void displayQueue() {
         if (front == null) {
             System.out.println("No patients currently waiting.");
@@ -64,7 +64,7 @@ public class EmergencyQueue {
         }
     }
 
-    // ---------- HELPER ----------
+    
     public boolean isEmpty() {
         return front == null;
     }
