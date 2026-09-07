@@ -24,7 +24,7 @@ Running Main,java presents the following menu :
 ### Adding Patients
 ![add patients](<screenshots/add patients.png>)
 
-### Patient Deletion Testing
+### Patient Deletion Testing and viewing all patients
 ![patient deletion](<screenshots/Patient delete and view full patients.png>)
 
 ### Edge Case & Structural Testing
