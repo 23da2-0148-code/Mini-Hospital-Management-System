@@ -33,7 +33,7 @@ Running Main,java presents the following menu :
 ## Technologies used 
 
 - **Language:** Java
-- **IDE** VS code
+- **IDE:** VS code
 
 ## Project details
 
